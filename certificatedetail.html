@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+        }
+        .certificate{
+            width: 21cm;
+            /* 21 x 29.7 */
+            height: 29.7cm;
+            position: relative;
+            background-image: url("./source/certificate.jpg"); 
+            background-size: cover;
+        }
+        #Sn{
+            margin-top:  9%;
+            left: 15.7%;
+            width: 150px;
+        }
+        img{
+            height: 98%;
+            width: 98%;
+        }
+        
+        div>input, div{
+            font-size: 1.05em;
+            position: absolute;
+            text-align: center;
+            height: 0.6cm;
+            /* border: 1px solid black; */
+        }
+        td>input{
+            height: fit-content;
+            width: 100%;
+            font-size: 1.05em;
+            text-align: center;
+        }
+        #name{
+            width: 11.2cm;
+            top: 20.8%;
+            left: 34.1%;
+
+        }
+        #fname{
+            top: 24%;
+            left: 27.6%;
+            width: 12.5cm;          
+        }
+        #mname{
+            top: 27%;
+            left: 28%;
+            width:5.9cm;
+        }
+        #dob{
+            top: 27%;
+            left: 70.5%;
+            width: 3.5cm;
+        }
+        #rollno{
+            top: 30.3%;
+            left: 21%;
+            width: 2.5cm;
+        }
+        #erollno{
+            top: 30.3%;
+            left: 49.1%;
+            width: 3.3cm;
+        }
+        #Session{
+            top: 30.3%;
+            left: 73% ;
+            width: 3cm;
+        }
+        #curriculum{
+            top: 33.3%;
+            left: 29%;
+            width: 10.3cm;
+        }
+        #performance{
+            top: 40.4%;
+            left: 45.3%;
+            width: 8.8cm;
+            
+        }
+        #award{
+            top: 50.5%;
+            left: 14.2%;
+            font-weight: 900;
+            width:15.2cm;
+        }
+        #result{
+            width: 80%;
+            left: 12%;
+            top: 56.3%;
+        }
+        table{
+            width: 100%
+        }
+        table,tr{
+            border-collapse: collapse;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 1em;
+        }
+        td{
+            width: max-content;
+        }
+        th{
+            font-weight: 700;
+        }
+        #Grade{
+            top: 73%;
+            left: 28%;
+            width: 5.5cm;
+        }
+        #IssueDay{
+            top: 76%;
+            left: 22%;
+            width: 5.5cm;
+        }
+        #IssueYear{
+            top: 76%;
+            left: 56%;
+            width: 6.5cm;
+        }
+        #gg{
+            top: 12.7%;
+            left: 75%;
+            height: 90px;
+            width:90px;
+        }
+        input{
+            border:none;
+            
+        }
+        td>input{
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+            /* border-left: 1px solid black; */
+        }
+        tr>th:nth-child(1){
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="./php/certificate.php" method="post">
+    <div class="certificate">
+        <input type="text" id="Sn" name="Sn">
+        <input type="text" id="name" name="name">
+        <input type="text" id="fname" name="fname">
+        <input type="text" id="mname" name="mname">
+        <input type="text" id="dob" name="dob">
+        <input type="text" id="rollno" name="rollno">
+        <input type="text" id="erollno" name="erollno">
+        <input type="text" id="Session" name="Session">
+        <input type="text" id="curriculum" name="curriculum">
+        <input type="text" id="performance" name="performance">
+        <input type="text" id="award" name="award">
+        <div id="result">
+            <table>
+                <tr>
+                    <th>&nbsp;S.no</th>
+                    <th>Subject</th>
+                    <th>Max Marks</th>
+                    <th>Theory</th>
+                    <th>Practical</th>
+                    <th>Obtained</th>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="s_no1"></td>
+                    <td> <input type="text" name="subject1"></td>
+                    <td> <input type="text" name="total1"></td>
+                    <td> <input type="text" name="theory1"></td>
+                    <td> <input type="text" name="practical1"></td>
+                    <td> <input type="text" name="Obtained1"></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="s_no2"></td>
+                    <td> <input type="text" name="subject2"></td>
+                    <td> <input type="text" name="total2"></td>
+                    <td> <input type="text" name="theory2"></td>
+                    <td> <input type="text" name="practical2"></td>
+                    <td> <input type="text" name="Obtained2"></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="s_no3"></td>
+                    <td> <input type="text" name="subject3"></td>
+                    <td> <input type="text" name="total3"></td>
+                    <td> <input type="text" name="theory3"></td>
+                    <td> <input type="text" name="practical3"></td>
+                    <td> <input type="text" name="Obtained3"></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="s_no4"></td>
+                    <td> <input type="text" name="subject4"></td>
+                    <td> <input type="text" name="total4"></td>
+                    <td> <input type="text" name="theory4"></td>
+                    <td> <input type="text" name="practical4"></td>
+                    <td> <input type="text" name="Obtained4"></td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="s_no5"></td>
+                    <td> <input type="text" name="subject5"></td>
+                    <td> <input type="text" name="total5"></td>
+                    <td> <input type="text" name="theory5"></td>
+                    <td> <input type="text" name="practical5"></td>
+                    <td> <input type="text" name="Obtained5"></td>
+                </tr>
+                <!--<tr>
+                    <td> <input type="text" name=""></td>
+                    <td> <input type="text" name=""></td>
+                    <td> <input type="text" name=""></td>
+                    <td> <input type="text" name=""></td>
+                    <td> <input type="text" name=""></td>
+                    <td> <input type="text" name=""></td>
+                </tr> -->
+                <tr>
+                    <td></td>
+                    <th>Total</th>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <input type="text" id="Grade" name="Grade">
+        <input type="text" id="IssueDay" name="IssueDay">
+        <input type="text" id="IssueYear" name="IssueYear">
+        <div id="gg" name="gg">
+            <img src="./source/WhatsApp Image 2024-02-22 at 7.57.59 PM.jpeg" alt="" srcset="">
+        </div>
+    </div>
+</form>
+</body>
+</html>
